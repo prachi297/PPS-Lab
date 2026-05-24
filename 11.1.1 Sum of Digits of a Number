@@ -1,0 +1,6 @@
+num = int(input("Enter a number: "))
+
+# Calculate sum of digits
+digit_sum = sum(int(digit) for digit in str(abs(num)))
+
+print("Sum of digits:", digit_sum)
