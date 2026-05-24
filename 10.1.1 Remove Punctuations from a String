@@ -1,0 +1,10 @@
+def remove_punctuation(s):
+    result = "".join(char for char in s if char.isalnum() or char.isspace())
+    return result
+
+def main():
+    text = input()
+    print(remove_punctuation(text))
+
+if __name__ == "__main__":
+    main()
