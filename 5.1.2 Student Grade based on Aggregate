@@ -1,0 +1,24 @@
+# Read four space-separated integers
+a, b, c, d = map(int, input().split())
+
+# Calculate total
+total = a + b + c + d
+
+# Calculate aggregate percentage
+percentage = total / 4
+
+# Print total and percentage
+print(total)
+print(f"{percentage:.2f}")
+
+# Determine grade
+if percentage > 75:
+ print("Distinction")
+elif percentage >= 60 and percentage < 75:
+ print("First Division")
+elif percentage >= 50 and percentage < 60:
+ print("Second Division")
+elif percentage >= 40 and percentage < 50:
+ print("Third Division")
+else:
+ print("Fail")
