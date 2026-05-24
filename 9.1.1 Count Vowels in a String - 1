@@ -1,0 +1,11 @@
+def count_vowels(s):
+    vowels = "aeiouAEIOU"
+    count = sum(1 for char in s if char in vowels)
+    return count
+
+def main():
+    text = input()
+    print(count_vowels(text))
+
+if __name__ == "__main__":
+    main()
